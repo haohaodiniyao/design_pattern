@@ -19,3 +19,22 @@ http://www.cnblogs.com/chowmin/articles/4629220.html
 http://www.tuicool.com/articles/zQZnEjV
 http://www.dajiangtai.com/community/18126.do
 http://www.importnew.com/12607.html
+-- solr5.5搭建
+http://blog.csdn.net/moxuelang/article/details/51417925
+-- solr5.5使用post.jar操作
+http://www.tuicool.com/articles/miInQbF
+http://www.uml.org.cn/j2ee/201601043.asp
+-- 添加
+java -Dc=jobs -jar post.jar solr.xml
+-- 删除根据主键
+java -Ddata=args -Dc=jobs -jar post.jar "<delete><id>SOLR1000</id></delete>"
+
+solr在window下启动 bin/ solr start
+server/solr下新建jobs
+复制server\solr\configsets\sample_techproducts_configs下conf文件夹到jobs
+控制台新增jobs core
+
+SolrJ API操作
+http://outofmemory.cn/code-snippet/80807/solr-usage-solrj-operation-de-gege-operation-daquan-solrcores-test
+solr和mysql查询性能比较
+https://yq.aliyun.com/articles/50474
